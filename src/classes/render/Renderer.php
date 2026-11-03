@@ -4,6 +4,9 @@ namespace iutnc\touiteur\render;
 
 interface Renderer {
 
-    public function render() : string;
+    const COMPACT = 1;
+    const LONG = 2;
+
+    public function render(int $selector) : string;
 
 }
