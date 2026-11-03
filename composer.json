@@ -1,0 +1,11 @@
+{
+    "name": "saeS3/Touiteur",
+    "description": "Plateforme de publication de textes",
+    "type": "project",
+
+    "autoload": {
+        "psr-4": {
+            "iutnc\\touiteur\\" : "./src/classes"
+        }
+    }
+}
