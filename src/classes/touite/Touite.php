@@ -1,5 +1,7 @@
 <?php
 
+namespace iutnc\touiteur\touite;
+
 class Touite {
 
     private string $text;

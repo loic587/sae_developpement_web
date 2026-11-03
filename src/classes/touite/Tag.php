@@ -1,5 +1,7 @@
 <?php
 
+namespace iutnc\touiteur\touite;
+
 class Tag {
 
     private string $text;
