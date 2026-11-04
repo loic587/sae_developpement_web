@@ -14,5 +14,10 @@ class ListeTouites {
         if (property_exists($this, $at)) return $this->$at;
         throw new \Exception ("invalid property : $at");
     }
+
+    public function __toString() : string
+    {
+        return json_encode(get_object_vars($this));
+    }
     
 }
