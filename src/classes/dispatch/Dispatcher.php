@@ -3,6 +3,7 @@
 namespace iutnc\touiteur\dispatch;
 
 use iutnc\touiteur\action\DisplayTouiteAction;
+use iutnc\touiteur\action\DisplayTouitesAction;
 
 class Dispatcher {
 
@@ -17,6 +18,9 @@ class Dispatcher {
         if (array_key_exists($this->action, $this->actions)) {
             switch ($this->action) {
             case "default" : 
+                $act = new DisplayTouitesAction();
+                break;
+            case "display-touite" : 
                 $act = new DisplayTouiteAction();
                 break;
             }
