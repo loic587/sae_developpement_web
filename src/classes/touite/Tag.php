@@ -4,7 +4,7 @@ namespace iutnc\touiteur\touite;
 
 class Tag {
 
-    private string $text;
+    protected string $text;
 
     public function __construct(string $txt)
     {
