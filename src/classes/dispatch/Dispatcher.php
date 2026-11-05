@@ -2,6 +2,7 @@
 
 namespace iutnc\touiteur\dispatch;
 
+use iutnc\touiteur\action\DefaultAction;
 use iutnc\touiteur\action\DisplayTouiteAction;
 use iutnc\touiteur\action\DisplayTouitesAction;
 
@@ -18,7 +19,7 @@ class Dispatcher {
         if (array_key_exists($this->action, $this->actions)) {
             switch ($this->action) {
             case "default" : 
-                $act = new DisplayTouitesAction();
+                $act = new DefaultAction();
                 break;
             case "display-touite" : 
                 $act = new DisplayTouiteAction();
@@ -39,6 +40,7 @@ class Dispatcher {
         echo <<<HTML
         <h1> Touiteur </h1>
         $html
+        <br><a href='?action=display-touite&id=1'>Afficher touite id 1</a><br>
         HTML;
     }
 

@@ -19,7 +19,7 @@ class RenderTouite implements Renderer {
         <img src=$touite->image alt='Image could not load'><br><br>
         <div name='tags'>";
         foreach($touite->tags as $t) {
-                $r = $r . "$t->text ";
+            $r = $r . " $t ";
         }  
         $r = $r . "</div>";
         return $r;
